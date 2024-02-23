@@ -77,9 +77,7 @@ NODE_API_MODULE(hello, Init)
 
 ```typescript
 // hello.d.ts
-declare module 'hello' {
-  export function hello(): void;
-}
+export function hello(): void;
 
 // hello.ts
 import * as hello from './build/Release/hello'
