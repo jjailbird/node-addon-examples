@@ -56,6 +56,8 @@ node-gyp clean --debug
 
 ## Node addon API
 
+[node-addon-api github](https://github.com/nodejs/node-addon-api?tab=readme-ov-file)
+
 ### Examples
 
 ```c++
@@ -77,6 +79,7 @@ NODE_API_MODULE(hello, Init)
 
 ```typescript
 // hello.d.ts
+// declare module 사용시 인식하지 못함!!!
 export function hello(): void;
 
 // hello.ts
